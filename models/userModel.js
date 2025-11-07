@@ -1,5 +1,24 @@
 import mongoose from "mongoose";
 
+
+// const  AddressSchema=new mongoose.Schema({
+//     name:{
+//         type:String,
+
+//     },
+//     address:{
+//         type:String,
+
+//     },
+//     pincode:{
+//         type:Number,
+//     },
+//     phoneNum:{
+//        type:Number,
+//     }
+
+// })
+
 export const userSChema= new mongoose.Schema({
     name:{
         type:String,
@@ -15,6 +34,17 @@ export const userSChema= new mongoose.Schema({
         required:true,
         minlength:6,
     },
+    status:{
+        type:String,
+        enum: ['active','inactive'],
+        default:"active"
+    },
+    Address: {
+       type:Object,
+     },
+
+    
+    
 
 
 })

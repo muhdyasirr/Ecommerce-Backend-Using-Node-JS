@@ -11,7 +11,7 @@ import mongoose from "mongoose"
         console.error("Mongodb Connection Failed",error.message)
     }
 }
-connectdb();
+
 
 
 export const adminCollection=mongoose.connection.collection("admin") 

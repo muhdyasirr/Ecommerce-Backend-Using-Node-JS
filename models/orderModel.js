@@ -22,9 +22,11 @@ const orderSchema = new mongoose.Schema({
     type: String,
     default: "Pending",
   },
-  // shippingAddress: {
-  //   type: String,
-  // },
+  UserAddress: {
+    type: String,
+    name:"user",
+    UserAddress:"404 line new fort kocchi,kerla"
+  },
   orderDate: {
     type: Date,
     default: Date.now,

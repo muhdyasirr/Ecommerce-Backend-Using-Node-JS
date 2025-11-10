@@ -27,7 +27,7 @@ routes.get("/cart",isUserAuth,getUserCart)
 routes.get("/allorders",isUserAuth,allorder)
 routes.post('/order',isUserAuth,userOrder)
 routes.delete('/order/:id',isUserAuth,deleteOrder)
-routes.post("/UserDeatils:id",isUserAuth,UserAddress)
+
 
 
 export default routes

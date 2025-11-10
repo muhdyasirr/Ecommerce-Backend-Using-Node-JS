@@ -1,23 +1,6 @@
 import mongoose from "mongoose";
 
 
-// const  AddressSchema=new mongoose.Schema({
-//     name:{
-//         type:String,
-
-//     },
-//     address:{
-//         type:String,
-
-//     },
-//     pincode:{
-//         type:Number,
-//     },
-//     phoneNum:{
-//        type:Number,
-//     }
-
-// })
 
 export const userSChema= new mongoose.Schema({
     name:{

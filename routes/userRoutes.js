@@ -5,7 +5,6 @@ import { isUserAuth } from '../middleware/middleware.js'
 import { userOrder,allorder, deleteOrder } from '../controller/orderController.js'
 import Product from '../models/productModel.js'
 import { viewProductById,getProductsByCategory,viewCategoery ,getAllproduct} from '../controller/AdminController.js'
-import { UserAddress } from '../controller/UserController.js'
 
 
 const routes = express.Router()
